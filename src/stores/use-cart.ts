@@ -16,47 +16,46 @@ export type CartItem = ItemBase & {
 export type Product = ItemBase & {
   stock: number
 }
-
 export const useCart = defineStore('cart', () => {
   const databaseProducts = ref<Product[]>([
     {
       id: ulid(),
-      image: '/public/audifonos.jpg',
+      image: '/audifonos.jpg',
       name: 'Audifono',
       price: 30_000,
       stock: 3,
     },
     {
       id: ulid(),
-      image: '/public/mouse.jpg',
+      image: '/mouse.jpg',
       name: 'Mouse',
       price: 20_000,
       stock: 5,
     },
     {
       id: ulid(),
-      image: '/public/teclado.png',
+      image: '/teclado.png',
       name: 'Teclado',
       price: 15_000,
       stock: 10,
     },
     {
       id: ulid(),
-      image: '/public/gabinete.webp',
+      image: '/gabinete.webp',
       name: 'Gabinete',
       price: 35_000,
       stock: 4,
     },
     {
       id: ulid(),
-      image: '/public/monitor.jpg',
+      image: '/monitor.jpg',
       name: 'Pantalla',
       price: 175_000,
       stock: 3,
     },
     {
       id: ulid(),
-      image: '/public/silla.jpg',
+      image: '/silla.jpg',
       name: 'Silla',
       price: 150_000,
       stock: 2,
